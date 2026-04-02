@@ -37,10 +37,27 @@ div img{
 }
 
 div{
-  display: inline-block;
-  width: 24%;
+  display: block;
+  width: 100%;
   margin: 5px;
   padding: 2px;
+}
+
+@media (min-width: 600px) { 
+    div{ 
+        display: inline-block;
+        width: 45%;
+    }
+    div img {
+        max-height: 30vh;
+        width: auto;
+    }
+}
+
+@media (min-width: 998px) { 
+    div { 
+        width : 30%;
+    }
 }
 
 
